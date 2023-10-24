@@ -29,6 +29,7 @@ class User extends Authenticatable
         'phone',
         'address',
         'password',
+        'usertype',
     ];
 
     /**
@@ -82,5 +83,11 @@ class User extends Authenticatable
         // For example, 'database', 'slack', 'webhook', or any custom channel.
         return 'database';
     }
+
+    public function certificates()
+    {
+        return $this->hasMany(Certificate::class);
+    }
+
 
 }

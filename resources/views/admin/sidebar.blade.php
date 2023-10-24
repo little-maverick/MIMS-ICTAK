@@ -3,12 +3,6 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/home">
-              <i class="ti-shield menu-icon"></i>
-              <span class="menu-title">Home</span>
-            </a>
-          </li>
            <li class="nav-item">
             <a class="nav-link" href="/activity">
               <i class="ti-star menu-icon"></i>
@@ -41,7 +35,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="/admin/certificate">
               <i class="ti-pie-chart menu-icon"></i>
               <span class="menu-title">Certification</span>
             </a>

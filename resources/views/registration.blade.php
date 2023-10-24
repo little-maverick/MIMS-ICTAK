@@ -128,18 +128,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/certificate">
+            <a class="nav-link" href="{{url('download_certificate')}}">
               <i class="ti-palette menu-icon"></i>
               <span class="menu-title">Certificate</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/settings">
-              <i class="ti-briefcase menu-icon"></i>
-              <span class="menu-title">Settings</span>
-            </a>
-          </li>
+              <a class="nav-link" href="/access_token">
+                <i class="ti-briefcase menu-icon"></i>
+                <span class="menu-title">Accounts</span>
+              </a>
+            </li>
           
           <li class="nav-item">
             <a class="nav-link" href="/help">

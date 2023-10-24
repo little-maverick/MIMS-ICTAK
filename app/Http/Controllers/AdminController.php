@@ -44,4 +44,15 @@ class AdminController extends Controller
     {
         return view("admin.body"); 
     }
+
+
+
+    public function index()
+    {
+       $user = User::find(auth()->id()); // or fetch the user data in a similar way
+       $certificates = Certificate::all();
+
+       return view('admin.certificate', compact('user', 'certificates'));
+    }
+
 }

@@ -8,6 +8,10 @@ use App\Http\Controllers\AdminController;
 
 use App\Http\Controllers\RegistrationController;
 
+use App\Http\Controllers\CertificateController;
+
+use App\Http\Controllers\MpesaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -70,6 +74,9 @@ Route::get('/membershipregistration', function () {
     return view('user.membershipregistration');
 });
 
+
+
+
 Route::get('/members_view', [AdminController::class, 'addview']);
 
 Route::post('/upload_members', [AdminController::class, 'upload']);
@@ -78,11 +85,37 @@ Route::get('/home',[AdminController::class, 'home']);
 
 Route::get('/activity', [AdminController::class, 'activity']);
 
-Route::get('/show_registration', [RegistrationController::class, 'showRegistrationForm']);
 
-// Route::post('/submit_form', [RegistrationController::class, 'submitForm']);
+
+
+Route::get('/show_registration', [RegistrationController::class, 'showRegistrationForm']);
 
 Route::post('/submit_form', 'App\Http\Controllers\RegistrationController@submitForm')->name('submit_form');
 
 
-// Route::get('/registration', 'App\Http\Controllers\RegistrationController@showRegistrationForm')->name('registration');
+
+
+Route::get('/generate-certificate/{userId}', [CertificateController::class, 'generateCertificate']);
+
+
+Route::get('/admin/certificate', 'App\Http\Controllers\CertificateController@index')->name('admin.certificate');
+
+Route::post('/store_certificates', [CertificateController::class, 'store']);
+
+Route::get('/admin/certificate', [CertificateController::class, 'index']);
+
+Route::get('/download_certificate/{id}', 'App\Http\Controllers\CertificateController@showDownloadCertificate')->name('downloadcertificate');
+
+Route::get('/download_certificate/{id}', [CertificateController::class, 'showDownloadCertificate']);
+
+
+
+
+Route::post('/access_token', [MpesaController::class, 'generateAccessToken']);
+Route::get('/access_token', [MpesaController::class, 'STKPUSH']);
+Route::get('/access_token', [MpesaController::class, 'showMpesa']);
+
+
+
+
+

@@ -22,6 +22,90 @@
 	  <link rel="stylesheet" href="user/assets/css/style.css">
 	  <!-- endinject -->
 	  <link rel="shortcut icon" href="user/assets/images/favicon.png" />
+	  <style>
+	  { 
+	  	font-family:'poppins', sans-serif;
+	  	margin: 0; padding: 0;
+	  	box-sizing: border-box;
+	  	outline: none; border: none;
+	  	text-transform: capitalize;
+	  	transition: all .2s linear;
+	  }
+	  .container{
+	  	display: flex;
+	  	justify-content: center;
+	  	align-items: center;
+	  	padding: 25px;
+	  	min-height: 100vh;
+	  	background: linear-gradient(90deg, #2ecc71 59%, #27ae60 41%);
+	  	padding-bottom: 70px;
+	  }
+	  .container form{
+	  	padding: 20px;
+	  	width: 700px;
+	  	background: #ffffff;
+	  	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	  }
+	  .container form .title{
+	  	font-size: 20px;
+	  	color: #3333;
+	  	padding-bottom: 5px;
+	  	text-transform: uppercase;
+	  }
+
+	  .container form .row{
+	  	display: flex;
+	  	flex-wrap: wrap;
+	  	gap: 15px;
+	  }
+	  .container form .row .col{
+	  	flex: 1 1 250px;
+	  }
+	  .container form .row .col .inputBox{
+	  	margin: 15px 0;
+	  }
+	   .container form .row .col .inputBox span{
+	  	margin-bottom: 10px;
+	  	display: block;	
+	  } 
+	   .container form .row .col .inputBox input{
+	  	width: 100%;	  	
+	  	border: 1px solid #ccc;
+	  	padding: 10px 15px;
+	  	font-size: 15px;
+	  	text-transform: none;
+	  }
+	  .container form .row .col .inputBox input:focus{
+	  	border: 1px solid #0000;
+	  } 
+	  .container form .row .col .flex{
+	  	display: flex;
+	  	gap: 15px;
+	  }
+	  .container form .row .col .flex .inputBox{
+	  	margin-top: 5px;
+	  }
+	  .container form .row .col .flex .inputBox image{
+	  	height: 34px;
+	  	margin-top: 5px;
+	  	filter: drop-shadow(0 0 1px #0000);
+	  }
+	  .container form .submit-btn{
+	  	width: 100%;
+	  	padding: 12px;
+	  	font-size: 17px;
+	  	background: #27ae60;
+	  	color: #ffffff;
+	  	margin-top: 5px;
+	  	cursor: pointer;
+	  }
+	  .container form .submit-btn:hover{
+	  	background: #2ecc71;
+	  	
+	  }	
+
+
+	  </style>
 	</head>
 	<body>
 	  <div class="container-scroller">
@@ -134,8 +218,6 @@
 	            	<i class="ti-palette menu-icon"></i>
 	            	<span class="menu-title">Certificate</span>
 	            </a>
-        		
-    
 	          </li>
 	          
 	          <li class="nav-item">
@@ -156,128 +238,59 @@
 	      <!-- partial -->
 	      <div class="main-panel">
 	        <div class="content-wrapper">
-	          <div class="row">
-	            <div class="col-md-5 grid-margin stretch-card">
-	              <div class="card" style="background-color: #e7e8e9;">    
-	                  <div class="card-body">
-	                    <p class="card-title mb-0">Upcoming Events</p>
-	                    <div>
-	                      <iframe src="https://calendar.google.com/calendar/embed?height=250&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FNairobi&title=ICTAK%20Upcoming%20Events%20and%20Training%20Programmes&showDate=1&showNav=0&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=YWhlbmRha2VsbHkwQGdtYWlsLmNvbQ&src=MTliNzdlZDhjM2M4MzE1NGNlNTA2MzdjNGYxMDFhYTU3YmE4ODZkOGY1OWE3YjMyNmE2NDdiZjU4N2IzZWMyNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ua2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%23F09300&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="350" height="250" frameborder="0" scrolling="no"></iframe>
-	                    </div>                 
-	                  </div>
-	              </div>
-	            </div>
-	            <div class="col-md-7 grid-margin stretch-card">
-	              <div class="card" style="background-color: #efe8ed;">    
-	                  <div class="card-body">
-	                    <p class="card-title mb-0">Statistics</p>
-	                      <div class="card" style="background-color: #f87774">
-	                        <div class="card-body">
-	                          <p class="card-title mb-0">27h</p>
-	                          <p>login activity</p> 
-	                        </div>
-	                      </div>
-	                    <div class="card" style="background-color: #b790ab">
-	                      <div class="card-body">
-	                        <p class="card-title mb-0">18</p>
-	                        <p>messages</p> 
-	                      </div>
-	                    </div>                
-	                  </div>
-	                </div>
-	            </div>
-	          </div>
-	          <div class="row">
-	            <div class="col-md-7 grid-margin stretch-card">
-	                <div class="card" style="background-color: #d0d0ff;">
-	                    <div class="card-body">
-	                        <p class="card-title mb-0"><strong>Applications</strong></p>
-	                        <div class="table-responsive">
-	                            <table class="table table-hover">
-	                                <thead>
-	                                    <tr>
-	                                        <th>No.</th>
-	                                        <th>Category</th>
-	                                        <th>
-	                                            <div class="table-header">Status of Application</div>
-	                                        </th>
-	                                        <th>Payment</th>
-	                                    </tr>
-	                                </thead>
-	                                <tbody>
-	                                    <tr>
-	                                        <td>1.</td>
-	                                        <td class="text-danger">Provisional Member <i class=""></i></td>
-	                                        <td class="progress-cell" data-status="Under Review">
-	                                            <div class="progress">
-	                                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-	                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-	                                            </div>
-	                                            <label class="badge badge-danger">Under Review</label>
-	                                        </td>
-	                                        <td>Completed</td>
-	                                    </tr>
-	                                </tbody>
-	                            </table>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-5 grid-margin stretch-card">
-	                <div class="card" style="background-color: #b2eda8;">
-	                    <div class="card-body">
-	                        <p class="card-title mb-0">Instructions on how to register</p>
-	                        <div class="table-responsive">
-	                            <label class="form-check-label">
-	                                <p>* Go to Register on the sidebar.</p>
-	                                <p>* Fill in the application form that is provided there with all correct details, leaving no field empty unless indicated optional. Submit all documents needed in PDF format.</p>
-	                                <p>* Remember to make payments to using our till no: N/B: Ensure while paying you are aware of the fee you are supposed to pay for we do not do returns. </p>
-	                                <p>* Submit everything after thorough checking to avoid being denied approval</p>
-	                              </label>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	          <div class="row">
-	            <div class="col-md-12 grid-margin stretch-card">
-	              <div class="card position-relative"  style="background-color: #f7f142;">
-	                <div class="card-body">
-	                  <p class="card-title"><strong>FOR PAYMENT DURING REGISTRATION: Our subscription Fees are as follows</strong></p>
-	                  <div class="row">
-	                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-	                      <div class=" rounded pt-3">
-	                          <div class="p-4">
-	                              <i class="fa fa-3x fa-user text-primary mb-3"></i>
-	                              <h5><strong>Individual membership</strong></h5>
-	                              <p>Registration Fee: ~KSH 5,000 </p>
-	                              <p>Subscription Fee: ~KSH 5,000(annualy) </p>
-	                          </div>
-	                      </div>
-	                  </div>
-	                  <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-	                    <div class=" rounded pt-3">
-	                        <div class="p-4">
-	                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-	                            <h5><strong>Student Membership(Fellow)</strong></h5>
-	                            <p>Registration Fee: ~KSH 500</p>
-	                            <p>Subscription Fee: ~KSH 1,000(annualy) </p>
-	                        </div>
-	                    </div>
-	                </div>
-	                <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-	                  <div class=" rounded pt-3">
-	                      <div class="p-4">
-	                          <i class="fa fa-3x fa-institution text-primary mb-4"></i>
-	                          <h5><strong>Corporate Membership(companies)</strong></h5>
-	                          <p>Registration Fee: ~KSH 10,000 </p>
-	                          <p>Subscription Fee: ~KSH 30,000(annualy)</p>
-	                      </div>
-	                    </div>  
-	                </div>
-	              </div>
-	        </div>
-	      </div>
-	  </div>
+	        <div class="container">
+	          <form action="">
+	          	<h3 class="title">PAYMENT METHOD</h3>
+	          	<div class="row">
+		          	<div class="col">
+		          		<div class="inputBox">
+		          			<span>Full Name</span>
+		          			<input type="name" name="name" placeholder="Jane Doe">
+		          		</div>
+		          		<div class="flex">
+		          			<div class="inputBox">
+			          			<span>Mpesa Payment</span>
+			          			<image scr="https://www.thefastmode.com/media/k2/items/src/3b9062947f65b40dd6e0b5425648550e.jpg?t=20220606_021946">
+			          		</div>
+			          		<div class="inputBox">
+			          			<span>PAYBILL NUMBER</span>
+			          			<h1>ICTAK PayBill Number: 174379</h1>
+			          		</div>
+		          		</div>
+		          	</div>
+	  		  </div>
+	          </form>
+	          <form action="">
+	          	<div class="row">
+	          		<div class="col">
+	          		<div class="inputBox">
+		          			<span>Payment Using Other Cards</span>
+		          			<image scr="https://unblast.com/wp-content/uploads/2018/08/Credit-Card-Icons.jpg">
+		          		</div>
+	          		<div class="inputBox">
+		          			<span>Name of Card</span>
+		          			<input type="name" name="name" placeholder="Jane Doe">
+		          	</div>
+		          	<div class="inputBox">
+		          			<span>Credit Card Number</span>
+		          			<input type="number" number="number" placeholder="1111-2222-3333-4444">
+		          	</div>
+		          	<div class="flex">
+			          	<div class="inputBox">
+			          			<span>Expiry date</span>
+			          			<input type="date"  placeholder="dd/mm/yyyy">
+			          	</div>
+			          	<div class="inputBox">
+			          			<span>CVV.</span>
+			          			<input type="number"  placeholder="12345">
+			          	</div>
+		          </div>
+	          	</div>
+	          </div> 
+	          <input type="button" btn="btn btn-primary" value="proceed to checkout" class="submit-btn"> 	
+	        </form>
+
+	  		</div>
 	        <!-- content-wrapper ends -->
 	        <!-- partial:partials/_footer.html -->
 	        <footer class="footer">

@@ -21,4 +21,10 @@ class registration extends Model
         'membership_category',
         'additional_details',
     ];
+
+    public function certificates()
+{
+    return $this->hasMany(Certificate::class);
+}
+
 }
