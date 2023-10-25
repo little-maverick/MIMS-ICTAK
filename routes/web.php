@@ -112,8 +112,12 @@ Route::get('/download_certificate/{id}', [CertificateController::class, 'showDow
 
 
 Route::post('/access_token', [MpesaController::class, 'generateAccessToken']);
-Route::get('/access_token', [MpesaController::class, 'STKPUSH']);
-Route::get('/access_token', [MpesaController::class, 'showMpesa']);
+
+Route::get('/payment', [MpesaController::class, 'showMpesa'])->name('showPaymentPage');
+
+Route::post('/process_payment', [MpesaController::class, 'STKPush'])->name('processPayment');
+
+Route::get('/payment_status', [MpesaController::class, 'query'])->name('paymentStatus');
 
 
 

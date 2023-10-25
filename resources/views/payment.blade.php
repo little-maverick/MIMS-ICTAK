@@ -221,7 +221,7 @@
 	          </li>
 	          
 	          <li class="nav-item">
-	            <a class="nav-link" href="/access_token">
+	            <a class="nav-link" href="{{url('payment')}}">
 	              <i class="ti-briefcase menu-icon"></i>
 	              <span class="menu-title">Accounts</span>
 	            </a>
@@ -239,8 +239,9 @@
 	      <div class="main-panel">
 	        <div class="content-wrapper">
 	        <div class="container">
-	          <form action="">
+	          <form method="post" action="{{ route('processPayment') }}" enctype="multipart/form-data">
 	          	<h3 class="title">PAYMENT METHOD</h3>
+	          	 @csrf
 	          	<div class="row">
 		          	<div class="col">
 		          		<div class="inputBox">
@@ -255,6 +256,7 @@
 			          		<div class="inputBox">
 			          			<span>PAYBILL NUMBER</span>
 			          			<h1>ICTAK PayBill Number: 174379</h1>
+			          			<button type="submit" class="btn btn-primary">Make Payment</button>
 			          		</div>
 		          		</div>
 		          	</div>

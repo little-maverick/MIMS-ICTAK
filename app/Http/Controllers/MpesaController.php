@@ -43,9 +43,9 @@ class MpesaController extends Controller
 
         $result = curl_exec($curl);
         $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        echo $results;
+        
         $result = json_decode($result);
-        echo $access_token = $result->access_token;
+        $access_token = $result->access_token;
         curl_close($curl);
     }
 
@@ -94,7 +94,64 @@ class MpesaController extends Controller
         $curl_response = curl_exec($curl);
         //echo response
 
-        echo $curl_response;
+        $data = json_decode($curl_response);
+        $CheckoutRequestID = $data->CheckoutRequestID;
+        $ResponseCode = $data->ResponseCode;
+
+        if($ResponseCode == '0'{
+            echo "The CheckoutRequestID for this transaction is :".$CheckoutRequestID;
+        }
+
+       
 
     }
+
+    public function query()
+    {
+
+    //include access token
+
+      date_default_timezone_set('Africa/Nairobi'); 
+      $query_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query';
+      $BusinessShortCode = 174379;
+      $passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
+      $Timestamp  Carbon::rawParse('now')->(YmdHms);
+
+      $Password = base64_encode($BusinessShortCode.$passkey.$Timestamp);
+      $CheckoutRequestID = 'ws_CO_';
+      $queryheader = ['Content-Type: application/json', 'Authorization: Bearer' $access_token];
+
+      //initiating the transaction 
+      $curl = curl_init();
+      curl_setopt($curl, CURLOPT_URL, $query_url);
+      curl_setopt($curl, CURLOPT_HTTPHEADER, $queryheader);
+      $curl_post_data = array(
+        "BusinessShortCode"=>$BusinessShortCode,
+        "Password"=> $password,
+        "Timestamp"=> $Timestamp,
+        "CheckoutRequestID"=> $CheckoutRequestID,
+      );
+
+       $data_string = json_encode($curl_post_data);
+        curl_setopt($curl, $CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($curl, $CURLOPT_POST, true);
+        curl_setopt($curl, $CURLOPT_POSTFIELDS, $data_string);
+        $curl_response = curl_exec($curl);
+
+        $data_to = json_decode($curl_response);
+
+        if(isset(data_to->ResultCode));
+        $ResultCode = $data_to->ResultCode;
+        if($ResultCode == '1037';{
+            $message = 'Timeout in completing transaction';
+        } elseif ($ResultCode == '1032'){
+            $message = 'Transaction cancelled by user'{
+        } elseif ($ResultCode == '1'){
+            $message = 'Balance insufficient for the transaction' {
+        } elseif ($ResultCode == '0'){
+            $message = 'Transaction is successful';
+        } 
+
+
+       }
 }

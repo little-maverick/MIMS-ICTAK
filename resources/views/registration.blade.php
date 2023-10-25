@@ -124,7 +124,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{url('show_registration')}}">
               <i class="ti-tablet menu-icon"></i>
-              <span class="menu-title">Register</span>
+              <span class="menu-title">Registration</span>
             </a>
           </li>
           <li class="nav-item">
@@ -135,7 +135,7 @@
           </li>
 
           <li class="nav-item">
-              <a class="nav-link" href="/access_token">
+              <a class="nav-link" href="{{url('payment')}}">
                 <i class="ti-briefcase menu-icon"></i>
                 <span class="menu-title">Accounts</span>
               </a>

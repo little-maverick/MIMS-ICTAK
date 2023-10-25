@@ -163,7 +163,7 @@
                 <p class="mb-4">~ To envisage the empowerment, development and enhancement of a dynamic and vibrant society through the harnessment and strategic application of information systems.</p>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h1 class="mb-4"><span class="text-primary">Our Mission</span></h1>
+                <h1 class="mb-4"><span class="text-primary" >Our Mission</span></h1>
                 <p class="mb-4">~ To develop, enhance and promote globally acceptable standards of professionalism and exploitation of information communication technology resources in ways that are dynamic and responsive to challenges within the fraternity.</p>
             </div>
         </div>
@@ -319,7 +319,7 @@
         <div class="row gy-5 gx-4 justify-content-center">
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-podcast fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(i)</h5>
@@ -330,7 +330,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-paw fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(ii)</h5>
@@ -341,7 +341,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-plug fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(iii)</h5>
@@ -352,7 +352,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-rocket fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(iv)</h5>
@@ -363,7 +363,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-bell fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(v)</h5>
@@ -374,7 +374,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-hourglass fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(vi)</h5>
@@ -385,7 +385,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                    <div class="d-inline-flex align-items-center justify-content-center bg-primary squared position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-secondary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                         <i class="fa fa-magic fa-3x text-white"></i>
                     </div>
                     <h5 class="mt-4">(vi)</h5>

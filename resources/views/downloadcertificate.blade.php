@@ -137,7 +137,7 @@
 	          </li>
 	          
 	          <li class="nav-item">
-	            <a class="nav-link" href="/access_token">
+	            <a class="nav-link" href="{{url('payment')}}">
 	              <i class="ti-briefcase menu-icon"></i>
 	              <span class="menu-title">Accounts</span>
 	            </a>
