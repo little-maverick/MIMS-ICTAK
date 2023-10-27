@@ -170,6 +170,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        \Safaricom\Mpesa\MpesaServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -187,6 +188,7 @@ return [
         // 'Example' => App\Facades\Example::class,
 
         'PDF' => Barryvdh\DomPDF\Facade::class,
+        'Mpesa' => \Safaricom\Mpesa\MpesaServiceProvider::class,
     ])->toArray(),
 
 ];

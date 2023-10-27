@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 use App\Models\members;

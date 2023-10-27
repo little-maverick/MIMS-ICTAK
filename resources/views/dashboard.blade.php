@@ -139,9 +139,9 @@
 	          </li>
 	          
 	          <li class="nav-item">
-	            <a class="nav-link" href="{{url('payment')}}">
+	            <a class="nav-link" href="/payment">
 	              <i class="ti-briefcase menu-icon"></i>
-	              <span class="menu-title">Accounts</span>
+	              <span class="menu-title">Payment</span>
 	            </a>
 	          </li>
 	         

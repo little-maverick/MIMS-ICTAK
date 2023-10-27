@@ -10,6 +10,9 @@ use App\Models\User;
 
 use App\Models\registration;
 
+use App\Models\Payment;
+
+
 use App\Models\Certificate;
 
 class HomeController extends Controller
@@ -74,30 +77,6 @@ class HomeController extends Controller
     {
         return view("user.membershipbenefits"); 
  
-    }
-
-    // public function downloadCertificate($userId)
-    // {
-    //     $user = User::find($userId);
-
-    //    if (!$user || $user->usertype == 'admin') {
-    //     return abort(404); // Handle the case where the user is not found or is an admin
-    //     }
-
-    //     $dompdf = new Dompdf();
-
-    //     $html = view('user.certificate', compact('user'));
-
-    //     $dompdf->loadHtml($html);
-    //     $dompdf->setPaper('A4', 'portrait');
-    //     $dompdf->render();
-
-    //     return $dompdf->stream('certificate.pdf');
-    // }
-
-    public function downloadCertificate()
-    {
-        return view('user.downloadcertificate');
     }
 
 

@@ -28,6 +28,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/redirects', [HomeController::class, 'redirects']);
 
 
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -102,7 +103,7 @@ Route::get('/admin/certificate', 'App\Http\Controllers\CertificateController@ind
 
 Route::post('/store_certificates', [CertificateController::class, 'store']);
 
-Route::get('/admin/certificate', [CertificateController::class, 'index']);
+Route::get('admin/certificate', [CertificateController::class, 'index']);
 
 Route::get('/download_certificate/{id}', 'App\Http\Controllers\CertificateController@showDownloadCertificate')->name('downloadcertificate');
 
@@ -110,14 +111,17 @@ Route::get('/download_certificate/{id}', [CertificateController::class, 'showDow
 
 
 
+Route::get('/payment', [MpesaController::class, 'showPaymentPage']);
 
-Route::post('/access_token', [MpesaController::class, 'generateAccessToken']);
+Route::post('/stk_initiate', [MpesaController::class, 'STK']);
 
-Route::get('/payment', [MpesaController::class, 'showMpesa'])->name('showPaymentPage');
 
-Route::post('/process_payment', [MpesaController::class, 'STKPush'])->name('processPayment');
 
-Route::get('/payment_status', [MpesaController::class, 'query'])->name('paymentStatus');
+
+
+// Route::post('/process_payment', [MpesaController::class, 'STKPush']);
+
+// Route::get('/payment_status', [MpesaController::class, 'query']);
 
 
 
